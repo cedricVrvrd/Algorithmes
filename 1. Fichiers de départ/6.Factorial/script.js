@@ -1,5 +1,11 @@
 function factorial(num) {
+  if (num === 0 || num === 1) return 1;
 
+  for (let i = num - 1; i >= 1; i--) {
+    // num = num * i;
+    num *= i;
+  }
+  return num;
 }
 
 /* ÉNONCÉ 📚 */
@@ -11,12 +17,8 @@ function factorial(num) {
  La factorielle de 0 et de 1 est égale à 1.
 */
 
-
 /* Tests à passer 🧪 */
 
-
-console.log(factorial(5));  // 120
-console.log(factorial(7));  // 5040
-console.log(factorial(9));  // 362880
-
-
+console.log(factorial(5)); // 120
+console.log(factorial(7)); // 5040
+console.log(factorial(9)); // 362880
