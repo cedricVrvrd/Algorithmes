@@ -1,15 +1,11 @@
-function largestValues(arr){
-
-}
-
+const largestValues = (arr) =>
+  arr.map((subArr) => subArr.reduce((acc, cur) => (cur > acc ? cur : acc)));
 
 /* ÉNONCÉ 📚 */
-
 
 /* 
 Créez un Algorithme qui prend un tableau composé de plusieurs tableaux en argument et qui retourne un seul tableau qui contient la valeur maximale de chaque sous-tableau. 
 */
-
 
 /* Test à passer 🧪 */
 
