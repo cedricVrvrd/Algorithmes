@@ -1,8 +1,6 @@
 function sameLetters(arr) {
-
-  
+  return arr[1].split("").every((el) => arr[0].includes(el));
 }
-
 
 /* ÉNONCÉ 📚 */
 
@@ -12,8 +10,6 @@ function sameLetters(arr) {
 
 /* Tests à passer 🧪 */
 
-// console.log(sameLetters(["concupiscence", "sens"]));  // true
-// console.log(sameLetters(["chat", "chien"]));          // false
-// console.log(sameLetters(["bonjour", "jour"]));        // true
-
-
+console.log(sameLetters(["concupiscence", "sens"])); // true
+console.log(sameLetters(["chat", "chien"])); // false
+console.log(sameLetters(["bonjour", "jour"])); // true

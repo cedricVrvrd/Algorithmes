@@ -1,16 +1,14 @@
 function addition(arr) {
-
-
+  for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+  }
 }
-
 
 /* ÉNONCÉ 📚 */
 
-
 /* Créez un algorithme utilisant la récursion pour additionner toutes les valeurs d'un tableau. */
 
-
 /* Tests à passer 🧪 */
-console.log(addition([1,2,3,4,5,6]));   // 21
-console.log(addition([999,999,999]));   // 2997
-console.log(addition([15,40,78,48,10,64])); // 255
+console.log(addition([1, 2, 3, 4, 5, 6])); // 21
+console.log(addition([999, 999, 999])); // 2997
+console.log(addition([15, 40, 78, 48, 10, 64])); // 255
